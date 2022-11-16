@@ -4,6 +4,7 @@ const cors = require('cors')
 const app = express()
 const mysql = require('mysql')
 const dotenv = require('dotenv').config()
+const PORT = process.env.EXPRESSPORT;
 
 const db = mysql.createPool({ // createConnection
     host: 'localhost',
@@ -68,7 +69,6 @@ app.put("/api/update", (req, res) => {
     })
 })
 
-const PORT = process.env.EXPRESSPORT;
 const msg = `Running on PORT ${PORT}`
 app.get("/", (req, res) => {
     res.send(`<h1>Express Server</h1><p>${msg}<p>`)
