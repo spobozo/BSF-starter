@@ -7,11 +7,11 @@ const dotenv = require('dotenv').config()
 const PORT = 3023;
 
 const db = mysql.createPool({ // createConnection
-    host: 'csci331.cs.montana.edu',
-    user: process.env.DBUSER,
-    password: process.env.DBPASS,
-    database: process.env.DATABASE,
-    port: process.env.DBPORT
+    host: 'localhost',
+    user: 'user23',
+    password: '23lair',
+    database: 'db23',
+    port: 3306
 })
 
 app.use(cors())
