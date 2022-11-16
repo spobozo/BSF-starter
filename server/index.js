@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express()
 const mysql = require('mysql')
 const dotenv = require('dotenv').config()
-const PORT = process.env.EXPRESSPORT;
+const PORT = 3023;
 
 const db = mysql.createPool({ // createConnection
     host: 'localhost',
