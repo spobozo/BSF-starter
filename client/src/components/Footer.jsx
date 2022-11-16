@@ -3,16 +3,14 @@ const Footer = () => {
     return (
         <div>
             <h2>Footer</h2>
-            <p><em> Daniel DeFrance, h48c334</em></p>
-            <p>My role in the project was to build the BSF-Starter code for the class:</p>
+            <p><em> Payton Morris, s31k237</em></p>
+            <p>My role in the project is to build the frontend and UI components for the Email feature:</p>
             <ul>
-                <li>client/App.js - root level component</li>
-                <li>client/App.css -  basic styling for form and volunteer list </li>
-                <li>client/AddEntry.jsx - A react component to collect volunteer data</li>
-                <li>client/CurrentEntries.jsx - React compoment listing volunteers to be emailed</li>
-                <li>server/index.js - an Express server connecting MySQL with React frontend</li>
+                <li>client/Email.jsx - formatting correct data/grammar for email contents</li>
+                <li>client/Email.jsx - making the email easy to read and consume for clients</li>
+                <li>client/Email.css - using UI design thinking as base of formatting.</li>
             </ul>
-            <p>Github: <a href="https://github.com/dldf/BSF-starter">https://github.com/dldf/BSF-starter</a></p>
+            <p>Github: <a href="https://github.com/spobozo/BSF-starter">https://github.com/spobozo/BSF-starter</a></p>
         </div>
     )
 }
