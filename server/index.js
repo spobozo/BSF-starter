@@ -7,7 +7,7 @@ const dotenv = require('dotenv').config()
 const PORT = 3023;
 
 const db = mysql.createPool({ // createConnection
-    host: 'localhost',
+    host: 'csci331.cs.montana.edu',
     user: process.env.DBUSER,
     password: process.env.DBPASS,
     database: process.env.DATABASE,
