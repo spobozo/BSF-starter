@@ -14,6 +14,10 @@ const db = mysql.createPool({ // createConnection
     port: 3306
 })
 
+db.getConnection()
+
+
+
 app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
